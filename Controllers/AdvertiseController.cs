@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using SellYourCar.Entities;
 using SellYourCar.Repos;
 using SellYourCar.ViewModels;
 
