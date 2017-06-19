@@ -7,4 +7,3 @@ Web api server done for Angular 2 client Repo
 - JWT as authentication mode 
 - CORS , naive implementation to comunnicate with my Angular Client
 As a SDK I used Visual Studio Code 
-![alt text](https://imageshack.com/i/pmo6b3wMp)
