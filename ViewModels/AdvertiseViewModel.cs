@@ -1,5 +1,4 @@
 using System;
-using SellYourCar.Entities;
 
 namespace SellYourCar.ViewModels
 {
