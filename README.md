@@ -5,4 +5,5 @@ Web api server done for Angular 2 client Repo
 - Fluent Validation for some validation 
 - AutoMapper , actually an AutoMapper extension for ASP.NetCore 
 - JWT as authentication mode 
-As an SDK I used Visual Studio Code 
+- CORS , naive implementation to comunnicate with my Angular Client
+As a SDK I used Visual Studio Code 
