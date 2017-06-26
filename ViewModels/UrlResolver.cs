@@ -47,6 +47,20 @@ namespace SellYourCar.ViewModels
             id= source.Id});
         }
     }
+    public class GetAddsFromMakeResolver : IValueResolver<MakeCar, MakeCarViewModel, int>
+    {
+        public int result;
+        public int Resolve(MakeCar source, MakeCarViewModel destination, int destMember, ResolutionContext context)
+        {
+                 
+                 var models = source.ModelCars;
+                 foreach(var model in models)
+                 {
+                    result += model.Advertises.Count;
+                 }
+                 return result;
+        }
+    }
 
 
 }
