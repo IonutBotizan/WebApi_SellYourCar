@@ -2,6 +2,7 @@
 Web api server done for Angular 2 client Repo
 - Using ASP.NET Core  as a server side technology 
 - Asp.Net Core Entity Framework  as an ORM for this project
+- LINQ to manipulate my entities 
 - Fluent Validation for some validation 
 - AutoMapper , actually an AutoMapper extension for ASP.NetCore 
 - Token Authentication with JWT Json Web Tokens
