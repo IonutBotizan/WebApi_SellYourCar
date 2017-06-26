@@ -35,7 +35,7 @@ namespace SellYourCar.Controllers
         IAdvertiseCarRepo _advertiseRepo;
         IModelCarRepo _modelCarRepo;
 
-        UserManager<CarAdderUser> _usrMgr;
+        UserManager<CarAdderUser>  _usrMgr;
         //const int page_size=6;
         public AdvertiseController(IAdvertiseCarRepo advertiseRepo, IMapper mapper, IModelCarRepo repo , 
         UserManager<CarAdderUser> userMgr)
