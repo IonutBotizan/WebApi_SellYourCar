@@ -74,6 +74,28 @@ namespace SellYourCar.Controllers
            return BadRequest("Cant Login server error");
            
        }
+       [HttpPost("api/authentication/register")]
+       public async Task<IActionResult> Register([FromBody]CredentialModel vm)
+       {
+             if(!ModelState.IsValid)
+             {
+                    return BadRequest(ModelState + "username and password are required ");
+             }
+             var user =await  _userMgr.FindByNameAsync(vm.UserName);
+             if(user==null)
+              {
+             user = new CarAdderUser{ UserName = vm.UserName };
+             var userResulted = await _userMgr.CreateAsync(user , vm.Password);
+             if (userResulted==null)
+            {
+                return BadRequest("User can not be created");
+            }
+               return Ok(); 
+            //return Created();
+              }
+              return BadRequest("user already exists");
+           }    
+          }
 
 
     }
