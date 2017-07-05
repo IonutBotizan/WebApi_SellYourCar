@@ -96,6 +96,11 @@ namespace SellYourCar.Controllers
               return BadRequest("user already exists");
            }    
           }
+          [HttpPost("logout")]
+          public async Task<IActionResult> Logout(){
+         await _sgnInMgr.SignOutAsync();
+         return Ok();
+         }
 
 
     }
